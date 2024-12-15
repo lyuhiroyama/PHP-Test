@@ -1,20 +1,18 @@
 <!-- 【初級】採用試験問題、課題１ -->
-<!-- こちらは、勉強ノートやインターネットで調べて進めた結果です： -->
-
-
+<!-- SAPICA 残高・ポイント計算 -->
 
 <?php
 
 // 標準入力から初めのチャージ額・乗車回数・運賃額を取得
 function readInput() { 
     
-    $firstLine = trim(fgets(STDIN)); // 1行めを取得（初めのチャージ額・乗車回数）
+    $firstLine = trim(fgets(STDIN)); // 1行目を取得（初めのチャージ額・乗車回数）
     $firstLineArr = explode(" ", $firstLine);
     $initialBalance = (int)$firstLineArr[0]; // 初めのチャージ額
     $numFares = (int)$firstLineArr[1]; // 乗車回数
     
- 
     $fares = [];
+
     for ($i = 0; $i < $numFares; $i++) { // 乗車回数分 標準入力から運賃額を取得
         $fares[] = (int)trim(fgets(STDIN)); // 各運賃額を配列に格納
     }
@@ -57,7 +55,6 @@ for ($i = 0; $i < count($results); $i++) {
     echo $results[$i][0] . " " . $results[$i][1];
 }
 
-// 末尾に改行を入れる。
 echo "\n";
 
 ?>
