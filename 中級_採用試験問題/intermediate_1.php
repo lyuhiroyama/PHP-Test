@@ -29,7 +29,7 @@ function findMinimumTraits($oreQuantity) {
     上記のwhile文について：
     (1 << $minTraits)： 数字「１」の2進数表現を、$minTraits回 左へシフトする。
     例：
-        $oreQuantity = 3の場合、
+        $oreQuantity = 10 の場合、
         １ループ目：「１」の2進数表現を $minTraits回（０回）左にシフトする。結果：１（0001）
         ２ループ目：「１」の2進数表現を $minTraits回（１回）左にシフトする。結果：２（0010）
         ３ループ目：「１」の2進数表現を $minTraits回（２回）左にシフトする。結果：４（0100）
