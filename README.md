@@ -32,7 +32,3 @@
 ### ・【初級】採用試験問題ー課題４:
 
 調べながら挑んだコードを .php ファイルにまとめました。
-
-<!-- 
-課題４: I felt like the instructions & conditions (0 <= X <= 354) didn't quite match with the provided input/outputs. 
--->
