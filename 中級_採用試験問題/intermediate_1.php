@@ -8,7 +8,7 @@ function readInput() {
     $firstLineArr = explode(" ", $firstLine);
     $oreQuantity = (int)$firstLineArr[0]; // 鉱石種類の数
 
-    // 1行目以降の入力(各特徴への答え)は不必要のため、入力できるようにはしておき、その後に破棄：
+    // 1行目以降の入力は不必要なので、入力できるようにはしておき、その後に破棄：
     for ($i=0; $i < $oreQuantity; $i++) {
         fgets(STDIN);
     }
